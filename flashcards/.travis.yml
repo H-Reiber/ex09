@@ -1,4 +1,5 @@
 language: java
 
-  gradle assemble
-  gradle check
+  git clone https://github.com/gradle-guides/gradle-site-plugin.git
+  cd gradle-site-plugin
+  ./gradlew build
