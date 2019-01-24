@@ -1,5 +1,8 @@
-language: java
+ language: java
+  install: true
 
-  git clone https://github.com/gradle-guides/gradle-site-plugin.git
-  cd gradle-site-plugin
-  ./gradlew build
+  jdk:
+    - oraclejdk8
+
+  script:
+    - ./gradlew build --scan -s
